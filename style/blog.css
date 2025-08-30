@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+
+#hind-maduri{
+    font-family: "Hind Madurai", sans-serif;
+}
+
+ body{
+   border: 2px solid salmon;
+   margin: auto;
+
+}
+/* emergency-service-parent */
+.emergency-service-parent
+{
+    width: 1280px;
+    display: flex;
+    gap:700px;
+    background-color: white;
+    margin: auto;
+
+}
+.img{
+    height: 40px;
+
+}
+.img-h1-parent{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.img-btn{
+    height: 20px;
+    width: 20px;
+}
+.btn-parent{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+
+/* directory */
+main{
+    background-color: rgba(65, 255, 107, 0.1);
+    
+}
+.directory-parent{
+    background-color: #006747;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 5px;
+}
+
+/* card section */
+.card-btn-parent{
+    align-items: center;
+    border:2px solid saddlebrown;
+    height: 300px;
+    width: 250px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: white;
+    background-color: white;
+    margin-top: 50px;
+}
+.card-parent{
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+    width: 1280px;
+    margin: auto;
+}
+.-img{
+    height: 30px;
+    padding: 2px;
+    align-items: center;
+}
+#row{
+    grid-row: span 2;
+    height:660px;
+}
+#card-btn-child{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+
+}
+
+
