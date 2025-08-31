@@ -1,12 +1,28 @@
+//function calll
+function getInputValue(value){
+    const addValue = Number(document.getElementById(value).innerText)
+    return addValue
+}
+
+// set inner text 
+
+function setInnerText(value){
+    const loveNumber = document.getElementById('love-number')
+    loveNumber.innerText = value
+    
+}
+
+
+
 // heart btn er kaj
 document.getElementById('love-btn').addEventListener('click',function(){
-    const number = Number(document.getElementById('love-number').innerText)
-    const total = number + 1
-    document.getElementById('love-number').innerText = total 
+   const newValue = getInputValue('love-number')
+    const total = newValue + 1
+    setInnerText(total)
 })
 document.getElementById('love-btn1').addEventListener('click',function(){
-    const number = Number(document.getElementById('love-number').innerText)
-    const total = number + 1
+    const newValue = getInputValue('love-number')
+    const total = newValue + 1
     document.getElementById('love-number').innerText = total 
 })
 
