@@ -1,5 +1,5 @@
 //travers
-
+// copy travers
 const copybtns = document.getElementsByClassName("copy-btn");
 for(let copybtn of copybtns){
     copybtn.addEventListener('click',function(){
@@ -10,22 +10,37 @@ for(let copybtn of copybtns){
         document.getElementById('copy-number').innerText = totalCopy
     })
 }
-let arr = []
-const callbtns = document.getElementsByClassName("call-btn")
-for(let callbtn of callbtns){
-    
-    callbtn.addEventListener('click',function(){
-       
 
+
+
+
+// call travers
+const callbtns = document.getElementsByClassName("call-btn")
+    for(let callbtn of callbtns){
+    
         const cardTitle = callbtn.parentNode.parentNode.parentNode.children[1].children[0].innerText
         console.log(cardTitle)
         const cardcall = callbtn.parentNode.parentNode.parentNode.children[1].children[4].children[1].innerText
         console.log(cardcall)
+
+         callbtn.addEventListener('click',function(){
+            // coin-container call 
+         const coinContainer = document.getElementById('coin-container').innerText
+
+
+
+        if(coinContainer <=0){
+        alert('your coin is finished')
+        return;
+        }
+
         alert('Error')
-        const coinContainer = document.getElementById('coin-container').innerText
+        
         const totalCoin = Number(coinContainer) - 20
         
         document.getElementById('coin-container').innerText = totalCoin
+
+       
 
         const historyContainer = document.getElementById('call-history-down')
         const div = document.createElement('div')
@@ -37,7 +52,7 @@ for(let callbtn of callbtns){
             <p></p>
            </div>
             <div>
-            <p style="padding: 5px; margin-top: 50px;">${arr.data}</p>
+            <p style="padding: 5px; margin-top: 50px;">${new Date().toLocaleTimeString()}</p>
             </div>
         </div>
         `
@@ -46,9 +61,13 @@ for(let callbtn of callbtns){
     })
 }
 
+
+
+
  document.getElementById('clear-container').addEventListener('click',function(){
     document.getElementById('call-history-down').innerHTML = '';
      document.getElementById('copy-number').innerText = 0;
+     document.getElementById('coin-container').innerText=0
  })
 
 
