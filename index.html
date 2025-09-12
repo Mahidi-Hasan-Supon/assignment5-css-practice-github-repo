@@ -21,7 +21,7 @@
         <div class="btn-parent">
             <button style="background-color:  rgba(65, 255, 107, 0.1);border-color:rgba(65, 255, 107, 0.1); width: 100px; height: 50px; padding: 5px; justify-content: center; align-items: center; text-align: center; gap: 5px; display: flex; border-radius: 50px; "><span id="love-number" style="margin-top: 5px;">0</span>
             <img src="assets/heart.png" class="img-btn" alt=""></button>
-            <button style="background: rgba(65, 255, 107, 0.1);border-color:rgba(65, 255, 107, 0.1); width: 100px; height: 50px; padding: 5px; gap: 5px; justify-content: center; align-items: center; text-align:center; display: flex; border-radius: 50px;"><span style="margin-top: 5px;">100</span>
+            <button style="background: rgba(65, 255, 107, 0.1);border-color:rgba(65, 255, 107, 0.1); width: 100px; height: 50px; padding: 5px; gap: 5px; justify-content: center; align-items: center; text-align:center; display: flex; border-radius: 50px;"><span style="margin-top: 5px;" id="coin-container">100</span>
             <img src="assets/coin.png" class="img-btn" alt=""></button>
             <button style=" background-color: rgb(65, 255, 107, 0.1);border-color:rgba(65, 255, 107, 0.1); width: 100px; height: 50px; border-radius: 50px;"><span id="copy-number">0</span>Copy</button>
         </div>
@@ -58,8 +58,8 @@
             <p id="hind-maduri" style="font-weight:bold;"><span id="number1">999</span></p>
             <button style=" border-radius: 9px; background-color: #F2F2F2; border: 1px solid gainsboro;">All</button>
            <div style="margin-top: 30px; ; display: flex;gap:50px; ">
-             <button id="copy-btn1" style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center;background-color: white;border: 1px solid gainsboro; ">Copy</button>
-            <button style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center; background-color: #00A63E; border-color: #00A63E;color: #F2F2F2;" id="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
+             <button id="copy-btn1" style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center;background-color: white;border: 1px solid gainsboro; " class="copy-btn">Copy</button>
+            <button style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center; background-color: #00A63E; border-color: #00A63E;color: #F2F2F2;" class="call-btn" id="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
            </div>
         </div>
         </div>
@@ -76,8 +76,8 @@
             <p id="hind-maduri " style="font-weight:bold;"><span id="number2">999</span></p>
             <button style=" border-radius: 9px; background-color: #F2F2F2; border: 1px solid gainsboro;">All</button>
            <div style="margin-top: 30px; ; display: flex;gap:50px; ">
-             <button id="copy-btn2" style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center;background-color: white;border: 1px solid gainsboro; ">Copy</button>
-            <button style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center; background-color: #00A63E; border-color: #00A63E;color: #F2F2F2; " id="call-btn1"><i class="fa-solid fa-phone"></i> Call</button>
+             <button id="copy-btn2" style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center;background-color: white;border: 1px solid gainsboro; " class="copy-btn">Copy</button>
+            <button style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center; background-color: #00A63E; border-color: #00A63E;color: #F2F2F2; " class="call-btn" id="call-btn1"><i class="fa-solid fa-phone"></i> Call</button>
            </div>
         </div>
         </div>
@@ -94,21 +94,22 @@
             <p id="hind-maduri" style="font-weight:bold;">999</p>
             <button style=" border-radius: 9px; background-color: #F2F2F2; border: 1px solid gainsboro;">All</button>
            <div style="margin-top: 30px; ; display: flex;gap:50px; ">
-             <button style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center;background-color: white;border: 1px solid gainsboro; ">Copy</button>
-            <button style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center; background-color: #00A63E; border-color: #00A63E;color: #F2F2F2; "><i class="fa-solid fa-phone"></i> Call</button>
+             <button style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center;background-color: white;border: 1px solid gainsboro; " class="copy-btn">Copy</button>
+            <button style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center; background-color: #00A63E; border-color: #00A63E;color: #F2F2F2; " class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
            </div>
         </div>
         </div>
         <div id="row" class="card-btn-parent">
-            <div id="card-btn-child" >
+            <div id="card-btn-child">
            
             <p style="margin-top: 20px;"><i class="fa-solid fa-clock"></i> Call History</p>
-            <button style="border-color: #00A63E; border-radius: 8px;color: #F2F2F2; margin-top: 5px; margin-left: 2px;height: 30px;width: 100px; background-color: #00A63E;">Clear
+            <button style="border-color: #00A63E; border-radius: 8px;color: #F2F2F2; margin-top: 5px; margin-left: 2px;height: 30px;width: 100px; background-color: #00A63E;" id="clear-container">Clear
             </button>
-        
+
+            
         </div>
-      <div id="call-history-down">
-        
+      <div id="call-history-down" >
+       
       </div>
         </div>
         <div class="card-btn-parent">
@@ -124,8 +125,8 @@
             <p id="hind-maduri" style="font-weight:bold;">999</p>
             <button style=" border-radius: 9px; background-color: #F2F2F2; border: 1px solid gainsboro;">All</button>
            <div style="margin-top: 30px; ; display: flex;gap:50px; ">
-             <button style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center;background-color: white;border: 1px solid gainsboro; ">Copy</button>
-            <button style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center; background-color: #00A63E; border-color: #00A63E;color: #F2F2F2; "><i class="fa-solid fa-phone"></i> Call</button>
+             <button style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center;background-color: white;border: 1px solid gainsboro; " class="copy-btn">Copy</button>
+            <button style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center; background-color: #00A63E; border-color: #00A63E;color: #F2F2F2; " class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
            </div>
         </div>
         </div>
@@ -142,8 +143,8 @@
             <p id="hind-maduri" style="font-weight:bold;">999</p>
             <button style=" border-radius: 9px; background-color: #F2F2F2; border: 1px solid gainsboro;">All</button>
            <div style="margin-top: 30px; ; display: flex;gap:50px; ">
-             <button style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center;background-color: white;border: 1px solid gainsboro; ">Copy</button>
-            <button style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center; background-color: #00A63E; border-color: #00A63E;color: #F2F2F2; "><i class="fa-solid fa-phone"></i> Call</button>
+             <button style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center;background-color: white;border: 1px solid gainsboro; " class="copy-btn">Copy</button>
+            <button style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center; background-color: #00A63E; border-color: #00A63E;color: #F2F2F2; " class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
            </div>
         </div>
         </div>
@@ -160,8 +161,8 @@
             <p id="hind-maduri" style="font-weight:bold;">999</p>
             <button style=" border-radius: 9px; background-color: #F2F2F2; border: 1px solid gainsboro;">All</button>
            <div style="margin-top: 30px; ; display: flex;gap:50px; ">
-             <button style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center;background-color: white;border: 1px solid gainsboro; ">Copy</button>
-            <button style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center; background-color: #00A63E; border-color: #00A63E;color: #F2F2F2; "><i class="fa-solid fa-phone"></i> Call</button>
+             <button style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center;background-color: white;border: 1px solid gainsboro; " class="copy-btn">Copy</button>
+            <button style="border-radius: 8px; height: 20px; width:300px; height: 30px; text:center; background-color: #00A63E; border-color: #00A63E;color: #F2F2F2; " class="call-btn"><i class="fa-solid fa-phone"></i> Call</button>
            </div>
         </div>
         </div>

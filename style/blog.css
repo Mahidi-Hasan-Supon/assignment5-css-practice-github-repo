@@ -98,6 +98,14 @@ main{
 }
 
 
+.bg{
+    background:aliceblue;
+    border-radius: 8px;
+    padding: 2px;
+    padding-left: 2px;
+    display: flex;
+}
+
 
 /* /@ responsive */
 
